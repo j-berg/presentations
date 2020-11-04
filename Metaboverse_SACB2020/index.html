@@ -17,7 +17,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Favicon -->
   <link rel="icon" href="https://raw.githubusercontent.com/Metaboverse/Metaboverse/master/docs/content/images/metaboverse_logo.iconset/icon_64x64.png" />
 <!-- / -->
-  
+
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
@@ -51,29 +51,61 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div class="w3-twothird">
       <h1>Abstract</h1>
 
-      <p class="w3-text-grey">Due to the scale and complexity inherent in metabolism, systems approaches that are easily accessible to the general researcher are necessary. However, current conventions often drive scientists to limit their focus to independent, high-magnitude components from their datasets or do not easily facilitate the comprehensive analysis of the data in the context of the metabolic network. Thus, we developed Metaboverse, a user-friendly, interactive, and cross-platform analysis and visualization tool for data layered on metabolic networks. Metaboverse offers the ability to integrate multi-omic, multi-condition, time course, and metabolomics tracing datasets on over ninety model organisms. We developed a search engine that comprehensively searches and analyzes the network for complex regulatory patterns within the sequencing, proteomics, and metabolomics data, integrating enzyme information into the metabolic network to create a robust search space. Additionally, as measurement sparsity often presents a unique challenge in metabolism data analysis, we developed a method for summarizing reactions across missing values to allow for pattern searching across these spaces. Users can also explore the upstream effects and downstream consequences of a perturbation across the global network or analyze the extent of reaction perturbations on the metabolic network. The results of these search algorithms are returned to the user and help ensure they consider all available patterns within the data, not just those within the favorite or familiar pathways. These capabilities aid scientists in rapidly generating new hypotheses that may have been missed by available approaches. This framework will be foundational in allowing users to analyze their data in a more holistic manner that integrates all measured information of their biological system to rapidly identify interesting regulatory patterns within the global metabolic network. Metaboverse is available under a GPL-3.0 open-source license and a beta version can be found at <a href="https://github.com/Metaboverse/Metaboverse" target="_blank">https://github.com/Metaboverse/Metaboverse</a>.</p>
+      <p class="w3-text-grey">Due to the scale and complexity inherent in metabolism, systems approaches that are easily accessible to the general researcher are necessary. We developed Metaboverse, a user-friendly, interactive, and cross-platform analysis and visualization tool for data layered on metabolic networks. Metaboverse offers the ability to integrate multi-omic, multi-condition, time course, and metabolomics tracing datasets on over ninety model organisms. We developed a search engine that comprehensively searches and analyzes the network for complex regulatory patterns within the sequencing, proteomics, and metabolomics data, integrating enzyme information into the metabolic network to create a robust search space. This framework will be foundational in allowing users to analyze their data in a more holistic manner that integrates all measured information of their biological system to rapidly identify interesting regulatory patterns within the global metabolic network. Metaboverse is available under a GPL-3.0 open-source license and a beta version can be found at <a href="https://github.com/Metaboverse/Metaboverse" target="_blank">https://github.com/Metaboverse/Metaboverse</a>.</p>
     </div>
 
     <div class="w3-third w3-center">
-      <img alt="Metaboverse logo" src="https://raw.githubusercontent.com/Metaboverse/Metaboverse/master/docs/content/images/metaboverse_logo.png" width="325" style="padding-left:100px; padding-left:200px"/>
+      <img alt="Metaboverse logo" src="metaboverse_logo.png" style="width:400px; padding-left:75px; padding-right:50px; padding-top:75px"/>
     </div>
   </div>
 </div>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+      <img alt="Metaboverse logo" src="metaboverse_logo.png" style="width:100px;"/>
+    </div>
+    <div class="w3-twothird">
+      <h1>Innovations of Metaboverse</h1>
+      <h5 class="w3-padding-32">Automated reaction pattern searches</h5>
+      <p class="w3-text-grey">text</p>
+      <h5 class="w3-padding-32">Handling data sparsity in metabolomics</h5>
+      <p class="w3-text-grey">text</p>
     </div>
 
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+  </div>
+</div>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-full">
+      <h1>Metaboverse Overview</h1>
+      <h5 class="w3-padding-32">Metaboverse is packaged with a user-friendly interactive interface where data and metadata are provided and the data are curated onto the metabolic network.</h5>
+
+      <p class="w3-text-grey">An illustration outlining the data input, processing, and exploration steps of the Metaboverse package. The user provides the name of the organism of interest from a drop-down menu along with an output location. The user then has the option to provide transcriptomics, proteomics, and/or metabolomics datasets. These datasets can be single- or multi-condition or time-course experiments. Data is formatted as follows: row names are the measured entity names or IDs, the first column is a log<sub>2</sub>(fold change) or other measurement value, and the second column is a statistical measurement. For time-course and multi-condition datasets, this pattern is repeated for each subsequent sample. During this step, the user can also provide sample labels and other modifiers to customize the curation and display of the data on the curated reaction network. Metaboverse will then build the model. Once the model is complete, the user will be able to visualize the patterns identified within reactions, explore pathway-specific or general perturbation networks, and perform general pathway and nearest reaction neighborhood exploration of the data.</p>
+
+      <div class="w3-center">
+        <img alt="Metaboverse overview" src="package_overview.png" style="width:800px; padding-top:50px;"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Insights</h1>
+      <h5 class="w3-padding-32">One</h5>
+      <p class="w3-text-grey">text.</p>
+
+
+    </div>
+
+    <div class="w3-third w3-center">
+      <img alt="Metaboverse logo" src="metaboverse_logo.png" style="width:100px;"/>
     </div>
   </div>
 </div>
@@ -83,7 +115,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
   <div class="w3-xlarge w3-padding-32">
     <a href="https://twitter.com/jordanberg0" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     <a href="https://scholar.google.com/citations?user=0XsLZ3sAAAAJ&hl=en" target="_blank"><i class="fa fa-google w3-hover-opacity"></i></a>
@@ -98,7 +130,7 @@ function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
