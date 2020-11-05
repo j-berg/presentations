@@ -55,7 +55,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <div class="w3-third w3-center">
-      <img alt="Metaboverse logo" src="ing/metaboverse_logo.png" style="width:400px; padding-left:75px; padding-right:50px; padding-top:75px"/>
+      <img alt="Metaboverse logo" src="img/metaboverse_logo.png" style="width:400px; padding-left:30px; padding-right:100px; padding-top:75px"/>
     </div>
   </div>
 </div>
@@ -63,17 +63,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Second Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-third w3-center">
-      <img alt="Metaboverse logo" src="ing/metaboverse_logo.png" style="width:100px;"/>
+    <div class="w3-twothird w3-center">
+      <video style="padding-right:30px; padding-top:25px; outline: none; width:650px;" controls>
+        <source src="img/motif.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
     </div>
-    <div class="w3-twothird">
-      <h1>Innovations of Metaboverse</h1>
+    <div class="w3-third">
+      <h1>Innovations</h1>
       <h5 class="w3-padding-32">Automated reaction pattern searches</h5>
-      <p class="w3-text-grey">text</p>
-      <h5 class="w3-padding-32">Handling data sparsity in metabolomics</h5>
-      <p class="w3-text-grey">text</p>
+      <p class="w3-text-grey">We developed an algorithm that automates the discovery of reaction patterns across the entire metabolic network based on the user-provided omics data. Metaboverse identifies a variety of different patterns. For example, the "Average" reaction pattern compares the averages of the inputs against the averages of the outputs of a reaction.</p>
     </div>
 
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top:-100px;">
+  <div class="w3-content">
+    <div class="w3-full">
+      <h5 class="w3-padding-32">Handling data sparsity in metabolomics</h5>
+      <p class="w3-text-grey">Metabolomics datasets often, if not always, only quantify a portion of the total metabolites involved in human metabolism and the metabolism of other organisms. This leads to gaps in the metabolic network and complicates pattern analysis within the metabolic network. Thus, we developed a reaction collapsing algorithm that bridges reactions with missing values and enables reaction pattern searching with missing values. </p>
+    </div>
   </div>
 </div>
 
@@ -96,22 +105,62 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Fourth Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Insights</h1>
-      <h5 class="w3-padding-32">One</h5>
-      <p class="w3-text-grey">text.</p>
-
-
+    <div class="w3-full">
+      <h1>Identifying canonical and novel metabolic patterns in lung adenocarcinomas</h1>
     </div>
+  </div>
+</div>
 
-    <div class="w3-third w3-center">
-      <img alt="Metaboverse logo" src="img/metaboverse_logo.png" style="width:100px;"/>
+<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top:-120px;">
+  <div class="w3-content">
+    <div class="w3-full">
+      <p class="w3-text-grey">Lung cancer remains a leading cause of death worldwide, and an improved understanding of the metabolism of these tumors is essential in understanding how to treat this disease more effectively. We were particularly interested in studying a dataset <a href="https://academic.oup.com/gigascience/article/9/1/giz137/5714891" target="_blank">we recently re-analyzed</a> as we had manually identified interesting reaction patterns that were not identified in the <a href="https://cancerpreventionresearch.aacrjournals.org/content/8/5/410" target="_blank">original study</a>.</p>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top:-60px;">
+  <div class="w3-content">
+    <div class="w3-half">
+      <h5 class="w3-padding-32">Identification of xanthine regulation by both the pattern recognition and perturbation analysis modules</h5>
+      <p class="w3-text-grey">Xantine, and other nucleotide metabolism components, were found to be significantly regulated in this study.</p>
+    </div>
+    <div class="w3-half w3-center">
+      <img alt="Xantine reaction pattern" src="img/xanthine.svg" style="width:450px; border: 2px solid black; margin-top:50px; margin-left: 20px"/>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top:-100px;">
+  <div class="w3-content">
+    <div class="w3-half">
+      <h5 class="w3-padding-32">Identification of a novel regulation event in lung adenocarcinomas</h5>
+      <p class="w3-text-grey">As <a href="https://academic.oup.com/gigascience/article/9/1/giz137/5714891" target="_blank">we previously emphasized</a>, by approaching these perturbations in a reaction-centric approach, we can identify regulatory behavior that further contextualizes the data. For example, using a more manual approach, we previously highlighted the modest upregulation of glyceric acid coupled with the proximal downregulation of 3-Phosphoglyceric acid which could indicate the decreased activity of glycerate kinase. This connection was missed in the original study but was quickly and automatically highlighted by Metaboverse's reaction pattern analysis module. This sub-pathway activity is consequential as it has connections to serine metabolism which contributes to generating an ideal environment for tumorigenesis.</p>
+    </div>
+    <div class="w3-half w3-center">
+      <img alt="GLYCTK reaction pattern" src="img/glyctk.svg" style="width:450px; border: 2px solid black; margin-top:50px; margin-left: 20px"/>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top:-100px;">
+  <div class="w3-content">
+    <div class="w3-half">
+      <h5 class="w3-padding-32">Identification of a enzymatic regulatory event that corresponds with poor prognosis</h5>
+      <p class="w3-text-grey">Consistent with the original study and our recent re-analysis of the data, nucleotide metabolism was broadly upregulated in adenocarcinomas and was highlighted in the reaction pattern and perturbation network analyses in Metaboverse. In particular, a top-scoring reaction pattern identified by Metaboverse involved the transformation ofdc-adenosyl methionine and spermidine to form spermine and 5′-methylthioadenosine by Spermine Synthase (SMS; top image). Although this reaction is a step in polyamine synthesis pathway, it is also connected with nucleotide metabolism. Individual components related to these metabolites were identified and discussed in the original study in the context of the polyamine synthesis pathway. Additionally, in our previous re-analysis of the dataset, we pointed to a potential regulatory action stemming from SpermidineSynthase (SRM) using manual methods of analysis.  However, this specific reaction pattern identified automatically byMetaboverse implicated a regulatory role for Spermine Synthase in this patient cohort that was not identified in the original study or our re-analysis. We can further explore this hypothesis using tools available within the public database, The Protein Expression Atlas [39–41] (v19.3), to explore the clinical implications of this observed pattern.  By analyzing survival rates of a lung adenocarcinoma (LUAD) cohort from The Cancer Genome Atlas (TCGA), we discovered a striking relationship in SMS gene expression levels and 5-year survival (bottom image), where, at a fragments-per-kilobase-million (FPKM) cut-off of 50, 5-year survival in the SMS-high expression group is only 17% (n=104) versus 47% in the SMS-low expression group (n=396) (log-rank Kaplain-Meier p-value = 1.6E-05). Thus, this regulatory pattern in LUAD patient scorresponds to an increase in SMS activity and poor prognoses.</p>
+    </div>
+    <div class="w3-half w3-center">
+      <img alt="GLYCTK reaction pattern" src="img/sms.svg" style="width:450px; border: 2px solid black; margin-top:50px; margin-left: 20px"/>
+      <img alt="GLYCTK reaction pattern" src="img/sms_survival.svg" style="width:450px; border: 2px solid black; margin-top:50px; margin-left: 20px"/>
     </div>
   </div>
 </div>
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Conclusions</h1>
+  <h3 class="w3-margin w3-large">View more details about each module in Metaboverse at <a href="https://metaboverse.readthedocs.io/en/latest/content/general-usage.html" target="_blank">https://metaboverse.readthedocs.io/en/latest/content/general-usage.html</a></h3>
+  <br>
+  <br>
+  <h1 class="w3-margin w3-xlarge">Funding</h1>
+  <p>1T32DK11096601, 1F99CA253744, R35GM131854, NSF DBI-1661375, NSF IIS-1513616</p>
 </div>
 
 <!-- Footer -->
